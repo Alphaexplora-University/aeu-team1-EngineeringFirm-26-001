@@ -42,9 +42,9 @@ export default function Header() {
         </div>
 
         {/* CTA Button */}
-        <Button className="to-primary-container text-on-primary font-headline scale-95 rounded-full bg-linear-to-r from-primary px-6 py-2.5 text-sm font-bold tracking-wider text-accent uppercase shadow-lg duration-200 ease-in-out hover:scale-100">
-          Admin Login
-          <Link to="/login" className="absolute inset-0" />
+        <Button className="to-primary-container text-on-primary font-headline scale-95 rounded-full bg-linear-to-r from-primary px-6 py-2.5 text-sm font-bold tracking-wider text-primary-foreground uppercase shadow-lg duration-200 ease-in-out hover:scale-100">
+          Get in Touch
+          <Link to="/contact" className="absolute inset-0" />
         </Button>
       </nav>
     </header>
