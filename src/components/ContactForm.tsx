@@ -213,14 +213,15 @@ export default function ContactForm() {
     <form
       noValidate
       onSubmit={form.handleSubmit(onSubmit)}
-      className="mx-auto max-w-2xl space-y-6 py-10"
+      className="mx-auto max-w-2xl space-y-6"
     >
       {/* Full Name */}
       <Field>
-        <FieldLabel htmlFor="full_name">FULL NAME</FieldLabel>
+        <FieldLabel htmlFor="full_name">What is your Full Name?</FieldLabel>
         <Input
           id="full_name"
           placeholder="Juan Dela Cruz"
+          className="bg-background"
           {...form.register("full_name")}
         />
         {form.formState.errors.full_name && (
@@ -230,11 +231,12 @@ export default function ContactForm() {
 
       {/* Email */}
       <Field>
-        <FieldLabel htmlFor="email">EMAIL ADDRESS</FieldLabel>
+        <FieldLabel htmlFor="email">What is your email address?</FieldLabel>
         <Input
           id="email"
           type="email"
           placeholder="you@company.com"
+          className="bg-background"
           {...form.register("email")}
         />
         {form.formState.errors.email && (
@@ -244,10 +246,12 @@ export default function ContactForm() {
 
       {/* Project Type */}
       <Field>
-        <FieldLabel htmlFor="project_type">PROJECT TYPE</FieldLabel>
+        <FieldLabel htmlFor="project_type">
+          What is the type of the project?
+        </FieldLabel>
         <select
           id="project_type"
-          className="w-full rounded-md border p-2"
+          className="w-full rounded-md border bg-background p-2"
           {...form.register("project_type")}
         >
           <option value="">Select project type</option>
@@ -264,11 +268,13 @@ export default function ContactForm() {
 
       {/* Message */}
       <Field>
-        <FieldLabel htmlFor="message">PROJECT DETAILS</FieldLabel>
+        <FieldLabel htmlFor="message">
+          What are the details of the project?
+        </FieldLabel>
         <Textarea
           id="message"
           placeholder="Describe your project scope, timeline, and requirements..."
-          className="min-h-32 resize-none"
+          className="min-h-32 resize-none bg-background"
           {...form.register("message")}
         />
         {form.formState.errors.message && (
@@ -278,7 +284,7 @@ export default function ContactForm() {
 
       {/* Date Picker */}
       <Field>
-        <FieldLabel htmlFor="date">PREFERRED DATE</FieldLabel>
+        <FieldLabel htmlFor="date">What is your preferred date?</FieldLabel>
         <div className="flex gap-2">
           <Popover>
             <PopoverTrigger asChild>
@@ -309,7 +315,7 @@ export default function ContactForm() {
                     (d) => format(d, "yyyy-MM-dd") === dateString
                   )
                 }}
-                className="rounded-md border"
+                className="rounded-md border bg-background"
               />
             </PopoverContent>
           </Popover>
@@ -328,7 +334,7 @@ export default function ContactForm() {
       {/* Time Slots */}
       {selectedDate && (
         <Field>
-          <FieldLabel htmlFor="time">PREFERRED TIME</FieldLabel>
+          <FieldLabel htmlFor="time">What is your preferred time?</FieldLabel>
           {loadingSlots ? (
             <div className="flex items-center justify-center py-4">
               <Loader2 className="h-4 w-4 animate-spin" />
@@ -351,7 +357,7 @@ export default function ContactForm() {
                     disabled={slot.booked}
                     className={`rounded-md border p-2 text-sm transition-colors ${
                       slot.booked
-                        ? "cursor-not-allowed border-zinc-200 bg-zinc-100 text-zinc-400 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-600"
+                        ? "cursor-not-allowed border-zinc-200 bg-background text-zinc-400 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-600"
                         : selectedTimeValue === slot.time
                           ? "border-primary bg-primary text-primary-foreground"
                           : "border-input hover:bg-accent"
