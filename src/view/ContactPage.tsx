@@ -13,15 +13,15 @@ export default function ContactPage() {
           animate={{ opacity: 1, x: 0 }}
           className="space-y-8"
         >
-          <h1 className="text-3xl font-semibold tracking-tight">Contact</h1>
+          <h1 className="text-3xl font-semibold tracking-tight">Contact Us</h1>
 
           <div className="space-y-4 text-lg">
             <div className="flex items-center gap-3">
-              <MapPin className="h-4 w-4 fill-smart-blue" />
+              <MapPin className="h-4 w-4 text-smart-blue" />
               <span>London, UK</span>
             </div>
             <div className="flex items-center gap-3">
-              <Phone className="h-4 w-4 fill-smart-blue" />
+              <Phone className="h-4 w-4 text-smart-blue" />
               <span>+44 20 7946 0123</span>
             </div>
           </div>

@@ -44,7 +44,7 @@ export default function App() {
   return (
     <div className="text-on-surface font-body selection:text-on-tertiary-fixed min-h-screen">
       <Header />
-      <main>
+      <main className="space-y-96">
         {/* Hero Section */}
         <section className="relative flex min-h-screen items-center pt-20">
           <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-8 lg:grid-cols-12">
@@ -73,7 +73,7 @@ export default function App() {
                 <Button
                   asChild
                   size="lg"
-                  className="text-on-primary font-headline hover:bg-primary-container rounded-lg bg-primary px-10 py-8 text-lg font-bold text-accent shadow-xl transition-all"
+                  className="text-on-primary font-headline hover:bg-primary-container rounded-lg bg-primary px-10 py-8 text-lg font-bold text-accent text-primary-foreground shadow-xl transition-all"
                 >
                   <Link to="/projects">View Our Work</Link>
                 </Button>
@@ -82,7 +82,7 @@ export default function App() {
                   asChild
                   size="lg"
                   variant="secondary"
-                  className="-container-high text-on-surface font-headline hover:-variant rounded-lg border-none bg-card px-10 py-8 text-lg font-bold transition-all hover:bg-card/70"
+                  className="-container-high text-on-surface font-headline rounded-lg border-none bg-powder-blue px-10 py-8 text-lg font-bold transition-all hover:bg-powder-blue/70"
                 >
                   <Link to="/contact">Consultation</Link>
                 </Button>
@@ -185,7 +185,7 @@ export default function App() {
         </section>
 
         {/* Featured Services Section */}
-        <section className="py-32">
+        <section className="pb-64">
           <div className="mx-auto max-w-7xl px-8">
             <div className="mb-20 text-center">
               <h2 className="font-headline mt-4 text-4xl font-bold">
