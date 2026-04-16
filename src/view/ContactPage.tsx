@@ -17,11 +17,11 @@ export default function ContactPage() {
 
           <div className="space-y-4 text-lg">
             <div className="flex items-center gap-3">
-              <MapPin className="h-4 w-4 fill-red-500" />
+              <MapPin className="h-4 w-4 fill-smart-blue" />
               <span>London, UK</span>
             </div>
             <div className="flex items-center gap-3">
-              <Phone className="h-4 w-4 fill-green-500" />
+              <Phone className="h-4 w-4 fill-smart-blue" />
               <span>+44 20 7946 0123</span>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full bg-card shadow-sm">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
         {/* Logo */}
-        <div className="font-headline text-2xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-50">
+        <div className="font-headline text-2xl font-extrabold tracking-tighter">
           AlphaExplora
         </div>
 
@@ -31,8 +31,8 @@ export default function Header() {
                 to={link.path}
                 className={`pb-1 transition-colors duration-300 ${
                   isActive
-                    ? "border-b-2 border-slate-900 font-bold text-slate-900 dark:border-slate-50 dark:text-slate-50"
-                    : "font-medium text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+                    ? "border-graphite-900 border-b-2 font-bold"
+                    : "font-medium text-slate-500 hover:text-slate-900"
                 }`}
               >
                 {link.label}

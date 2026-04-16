@@ -55,7 +55,7 @@ export default function SustainabilityGrid() {
   const [activeId, setActiveId] = useState<number | null>(null)
 
   return (
-    <section className="bg-slate-50 px-8 py-24 md:px-64">
+    <section className="px-8 py-24 md:px-64">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {services.map((service) => {
           const Icon = service.icon
@@ -72,8 +72,8 @@ export default function SustainabilityGrid() {
               <Card
                 className={`group relative flex h-72 flex-col overflow-hidden rounded-[2rem] border p-8 transition-all duration-500 ${
                   isActive
-                    ? "border-slate-800 bg-slate-900 text-white shadow-2xl shadow-slate-900/20"
-                    : "border-slate-100 bg-white text-slate-900 shadow-sm hover:-translate-y-1 hover:border-slate-200 hover:shadow-xl hover:shadow-slate-200/50"
+                    ? "border-primary"
+                    : "border-slate-100 bg-card text-slate-900 shadow-sm hover:-translate-y-1 hover:border-slate-200 hover:shadow-xl hover:shadow-slate-200/50"
                 }`}
               >
                 <motion.div
@@ -85,16 +85,12 @@ export default function SustainabilityGrid() {
                   <div className="mb-4 flex items-start justify-between">
                     <div
                       className={`rounded-2xl p-3 transition-colors duration-500 ${
-                        isActive
-                          ? "bg-slate-800 shadow-inner"
-                          : "bg-slate-50 group-hover:bg-slate-100"
+                        isActive ? "" : ""
                       }`}
                     >
                       <Icon
                         className={`h-6 w-6 transition-colors duration-500 ${
-                          isActive
-                            ? "text-green-400"
-                            : "text-slate-600 group-hover:text-slate-900"
+                          isActive ? "text-smart-blue" : "text-smart-blue"
                         }`}
                       />
                     </div>
@@ -105,7 +101,7 @@ export default function SustainabilityGrid() {
                       <ArrowRight
                         className={`h-5 w-5 transition-all duration-500 ${
                           isActive
-                            ? "rotate-90 text-green-400"
+                            ? "rotate-90 text-primary"
                             : "text-slate-300 group-hover:-rotate-45 group-hover:text-slate-600"
                         }`}
                       />
@@ -144,7 +140,7 @@ export default function SustainabilityGrid() {
                 <div
                   className={`absolute -right-8 -bottom-8 h-40 w-40 rounded-full blur-[3rem] transition-all duration-700 ease-in-out ${
                     isActive
-                      ? "scale-150 bg-green-500/15"
+                      ? ""
                       : "scale-100 bg-slate-200/40 group-hover:bg-slate-300/40"
                   }`}
                 />

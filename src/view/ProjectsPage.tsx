@@ -71,7 +71,7 @@ export default function App() {
   })
 
   return (
-    <div className="bg-background selection:bg-primary selection:text-primary-foreground">
+    <div>
       <main className="pt-32 pb-64">
         {" "}
         {/* Reduced top padding to pull content up */}

@@ -20,7 +20,7 @@ const services = [
       "Creating iconic landmarks that define skylines and maximize functional efficiency for multi-use commercial spaces.",
     icon: <DraftingCompass className="h-8 w-8" />,
     features: ["Sustainable Urban Planning", "3D Conceptual Modeling"],
-    color: "text-blue-400",
+    color: "text-smart-blue",
   },
   {
     title: "Structural Engineering",
@@ -28,7 +28,7 @@ const services = [
       "Rigorous analysis and engineering precision ensuring stability and longevity for high-rise developments.",
     icon: <HardHat className="h-8 w-8" />,
     features: ["Seismic Resilience Design", "Advanced Material Science"],
-    color: "text-yellow-400",
+    color: "text-smart-blue",
   },
   {
     title: "Project Management",
@@ -36,7 +36,7 @@ const services = [
       "End-to-end oversight ensuring timeline adherence and fiscal responsibility on complex, large-scale builds.",
     icon: <ClipboardList className="h-8 w-8" />,
     features: ["Cost Control & Optimization", "Strategic Procurement"],
-    color: "text-green-400",
+    color: "text-smart-blue",
   },
 ]
 
@@ -56,7 +56,7 @@ export default function App() {
             >
               <h1 className="font-headline text-on-surface mb-8 text-6xl leading-[1.1] font-extrabold tracking-tight md:text-8xl">
                 Precision in{" "}
-                <span className="bg-clip-text text-primary">Motion.</span>
+                <span className="bg-clip-text text-smart-blue">Motion.</span>
               </h1>
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -143,25 +143,25 @@ export default function App() {
                       label: "Projects Delivered",
                       value: "450+",
                       icon: ShieldCheck,
-                      color: "fill-green-400",
+                      color: "text-smart-blue",
                     },
                     {
                       label: "Global Patents",
                       value: "18",
                       icon: Globe,
-                      color: "fill-blue-400",
+                      color: "text-smart-blue",
                     },
                     {
                       label: "Engineering Awards",
                       value: "32",
                       icon: Award,
-                      color: "fill-yellow-400",
+                      color: "text-smart-blue",
                     },
                     {
                       label: "Safety Rating",
                       value: "99.9%",
                       icon: FileText,
-                      color: "fill-red-400",
+                      color: "text-smart-blue",
                     },
                   ].map((stat, index) => (
                     <div key={index} className="flex flex-col">
@@ -216,7 +216,7 @@ export default function App() {
                   <ul className="text-on-surface-variant space-y-3 text-sm font-medium">
                     {service.features.map((feature, fIndex) => (
                       <li key={fIndex} className="flex items-center">
-                        <CheckCircle className="text-tertiary mr-2 h-4 w-4 fill-green-400" />{" "}
+                        <CheckCircle className="text-tertiary mr-2 h-4 w-4 text-navy-electric" />{" "}
                         {feature}
                       </li>
                     ))}

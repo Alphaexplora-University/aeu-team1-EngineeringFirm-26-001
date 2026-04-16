@@ -32,19 +32,19 @@ const MissionSection = () => (
             icon: Award,
             title: "Certified Excellence",
             desc: "We hold ISO 9001 certifications and multiple international awards for architectural innovation.",
-            color: "fill-yellow-400",
+            color: "text-smart-blue",
           },
           {
             icon: Compass,
             title: "Uncompromising Quality",
             desc: "Every joint, every line of code, and every structural beam undergoes a rigorous validation process that exceeds industry standards.",
-            color: "fill-red-400",
+            color: "text-smart-blue",
           },
           {
             icon: Cpu,
             title: "Technical Integrity",
             desc: "We maintain an unwavering commitment to the mathematical truth of our projects, ensuring longevity and safety in every environment.",
-            color: "fill-blue-400",
+            color: "text-smart-blue",
           },
         ].map((item, idx) => (
           <motion.div
