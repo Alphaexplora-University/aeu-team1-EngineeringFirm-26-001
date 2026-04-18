@@ -106,6 +106,11 @@ export default function App() {
         {/* Reduced top padding to pull content up */}
         {/* Filter Bar */}
         <section className="mx-auto mb-8 max-w-7xl px-8">
+          <div className="mb-12 text-center">
+            <h1 className="text-on-surface text-4xl font-bold tracking-tight">
+              Projects
+            </h1>
+          </div>
           <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
             <div className="flex flex-wrap gap-2">
               {CATEGORIES.map((category) => {
@@ -127,7 +132,7 @@ export default function App() {
               <Search className="absolute top-1/2 left-3 h-3.5 w-3.5 -translate-y-1/2" />
               <Input
                 placeholder="Search..."
-                className="h-9 rounded-full border-none bg-card pl-9 text-sm"
+                className="h-9 rounded-full border border-powder-blue bg-card pl-9 text-sm"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
